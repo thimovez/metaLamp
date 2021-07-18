@@ -1,0 +1,46 @@
+.header {
+    &__ul {
+        display: flex;
+        li {
+            list-style: none;
+            margin-right: 20px;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 26px;
+        align-items: center;
+    }
+}
+
+.button {
+    &__entry {
+        width: 87px;
+        height: 34px;
+        border: solid;
+        border-radius: 22px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        color: $main-color;
+        text-transform: uppercase;
+        background: #fff;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    }
+    &__register {
+        width: 196px;
+        height: 34px;
+        border: none;
+        background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+        border-radius: 22px;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}
