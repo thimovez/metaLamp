@@ -1,11 +1,31 @@
 .header {
-    &__ul {
-        display: flex;
-        li {
-            list-style: none;
-            margin-right: 20px;
-        }
-    }
+    // &__ul {
+    //     display: flex;
+    //     li {
+    //         position: relative;
+    //         color: rgba(31, 32, 65, 0.5);
+    //         list-style: none;
+    //         margin-right: 20px;
+    //         &:hover {
+    //             color: rgba(31, 32, 65, 0.75);
+    //         }
+    //     }
+    //     &-menu {
+    //         &::before {
+    //             content: '';
+    //             position: absolute;
+    //             height: 6px;
+    //             width: 6px;
+    //             right: -12px;
+    //             top: 4px;
+    //             border-right: 2px solid #1f2041;
+    //             border-bottom: 2px solid #1f2041;
+    //             -webkit-transform: rotate(45deg);
+    //             transform: rotate(45deg);
+    //         }
+    //     }
+    // }
+    
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -14,11 +34,44 @@
     }
 }
 
+.menu {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {
+        position: relative;
+        color: rgba(31, 32, 65, 0.5);
+        list-style: none;
+        margin-right: 20px;
+        &:hover {
+            color: rgba(31, 32, 65, 0.75);
+        
+        }
+        &-link {
+            &::after {
+                content: '';
+                position: absolute;
+                height: 6px;
+                width: 6px;
+                right: -12px;
+                top: 4px;
+                border-right: 2px solid #1f2041;
+                border-bottom: 2px solid #1f2041;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+        }
+    }
+}
+
+
 .button {
     &__entry {
         width: 87px;
         height: 34px;
-        border: solid;
+        border: 2px solid #bc9cff;
         border-radius: 22px;
         font-weight: bold;
         font-size: 12px;
