@@ -53,18 +53,25 @@
         }
         
         &-link {
+            padding-right: 20px;
             &::after {
                 content: '';
                 position: absolute;
+                opacity: .5;
+                background-color: transparent;
+                margin-right: 20px;
                 height: 6px;
                 width: 6px;
-                right: -12px;
+                right: -14px;
                 top: 4px;
                 border-right: 2px solid #1f2041;
                 border-bottom: 2px solid #1f2041;
                 -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
-                
+            }
+            &:hover {
+                color: $main-color;
+                transition: 0.5s;
             }
         }
     }
@@ -84,6 +91,9 @@
         text-transform: uppercase;
         background: #fff;
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        a {
+            color: $main-color;
+        }
     }
     &__register {
         width: 196px;
@@ -99,5 +109,8 @@
         text-transform: uppercase;
 
         color: #FFFFFF;
+        a {
+            color: #fff;
+        }
     }
 }
