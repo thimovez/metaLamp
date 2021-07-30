@@ -35,7 +35,7 @@
 }
 
 .menu {
-    ul {
+    &__list {
         display: flex;
         margin-left: 300px;
     }
@@ -43,7 +43,7 @@
         position: relative;
         list-style: none;
         margin-right: 20px;
-        a {
+        &-link {
             color: rgba(31,32,65,.5);
             text-decoration: none;
             &:hover {
@@ -51,27 +51,21 @@
                 transition: 0.5s;
             }
         }
-        
-        &-link {
+        &-sidebar {
             padding-right: 20px;
             &::after {
                 content: '';
                 position: absolute;
                 opacity: .5;
                 background-color: transparent;
-                margin-right: 20px;
                 height: 6px;
                 width: 6px;
-                right: -14px;
-                top: 4px;
+                right: 6px;
+                top: 5px;
                 border-right: 2px solid #1f2041;
                 border-bottom: 2px solid #1f2041;
                 -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
-            }
-            &:hover {
-                color: $main-color;
-                transition: 0.5s;
             }
         }
     }
