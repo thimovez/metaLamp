@@ -1,5 +1,5 @@
 .footer {
-    padding-top: 100px;
+    padding: 100px 0 0 0 ;
     &__content {
         margin-right: 40px;
     }
@@ -45,12 +45,12 @@
         border-radius: 4px 0 0 4px;
         border: 1px solid rgba(31,32,65,.25);
         border-right: none;
+        outline: none;
     }
     &__arr {
         background-image: url(../icons/arrow_forward.png) ;
         width: 44px;
         height: 36px;
-        border-left: none;
         border-radius: 0 4px 4px 0;
         outline: none;
         background-repeat: no-repeat;
@@ -58,5 +58,19 @@
         background-position: 50%;
         border: 1px solid rgba(31,32,65,.25);
         cursor: pointer;
+        border-left: none;
+    }
+    &__line {
+        padding: 26px 0;
+        border-bottom: 1px solid rgba(31,32,65,.25);
+    }
+
+    &__end {
+        display: flex;
+        padding: 26px 0;
+        justify-content: space-between;
+        img {
+            margin-right: 20px;
+        }
     }
 }

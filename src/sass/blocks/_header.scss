@@ -1,35 +1,8 @@
 .header {
-    // &__ul {
-    //     display: flex;
-    //     li {
-    //         position: relative;
-    //         color: rgba(31, 32, 65, 0.5);
-    //         list-style: none;
-    //         margin-right: 20px;
-    //         &:hover {
-    //             color: rgba(31, 32, 65, 0.75);
-    //         }
-    //     }
-    //     &-menu {
-    //         &::before {
-    //             content: '';
-    //             position: absolute;
-    //             height: 6px;
-    //             width: 6px;
-    //             right: -12px;
-    //             top: 4px;
-    //             border-right: 2px solid #1f2041;
-    //             border-bottom: 2px solid #1f2041;
-    //             -webkit-transform: rotate(45deg);
-    //             transform: rotate(45deg);
-    //         }
-    //     }
-    // }
-    
+    padding: 26px 0;
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        margin-top: 26px;
         align-items: center;
     }
 }
