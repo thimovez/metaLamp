@@ -10,7 +10,7 @@
 .menu {
     &__list {
         display: flex;
-        margin-left: 300px;
+        margin-left: 200px;
     }
     &__item {
         position: relative;
@@ -30,7 +30,6 @@
                 content: '';
                 position: absolute;
                 opacity: .5;
-                background-color: transparent;
                 height: 6px;
                 width: 6px;
                 right: 6px;
@@ -41,6 +40,10 @@
                 transform: rotate(45deg);
             }
         }
+    }
+    &__dropdown {
+        // display: none;
+        overflow: hidden;
     }
 }
 
