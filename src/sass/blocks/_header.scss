@@ -20,9 +20,9 @@
             color: rgba(31,32,65,.5);
             text-decoration: none;
             &:hover {
-                color: $main-color;
-                transition: 0.5s;
-            }
+                    color: $main-color;
+                    transition: 0.5s;
+                }
         }
         &-sidebar {
             padding-right: 20px;
