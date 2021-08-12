@@ -1,75 +1,74 @@
 .header {
-    // &__ul {
-    //     display: flex;
-    //     li {
-    //         position: relative;
-    //         color: rgba(31, 32, 65, 0.5);
-    //         list-style: none;
-    //         margin-right: 20px;
-    //         &:hover {
-    //             color: rgba(31, 32, 65, 0.75);
-    //         }
-    //     }
-    //     &-menu {
-    //         &::before {
-    //             content: '';
-    //             position: absolute;
-    //             height: 6px;
-    //             width: 6px;
-    //             right: -12px;
-    //             top: 4px;
-    //             border-right: 2px solid #1f2041;
-    //             border-bottom: 2px solid #1f2041;
-    //             -webkit-transform: rotate(45deg);
-    //             transform: rotate(45deg);
-    //         }
-    //     }
-    // }
-    
+    padding: 10px 0 10px 0;
     &__wrapper {
         display: flex;
         justify-content: space-between;
-        margin-top: 26px;
         align-items: center;
     }
 }
 
 .menu {
-    ul {
+    &__list {
         display: flex;
-        margin-left: 300px;
+        margin-left: 200px;
     }
     &__item {
         position: relative;
-        list-style: none;
+        display: block;
         margin-right: 20px;
-        a {
-            color: rgba(31,32,65,.5);
+        li,
+        &:hover .menu__dropdown {
+            display: block;
+        }
+        &:last-child {
+            margin-right: 0;
+        }
+        &-link {
+            color: rgba(31, 32, 65, .5);
             text-decoration: none;
             &:hover {
                 color: $main-color;
                 transition: 0.5s;
             }
         }
-        
-        &-link {
-            &::after {
+        &-sidebar {
+            padding-right: 20px;
+            &::before {
+                display: block;
                 content: '';
                 position: absolute;
+                opacity: .5;
                 height: 6px;
                 width: 6px;
-                right: -12px;
-                top: 4px;
-                border-right: 2px solid #1f2041;
-                border-bottom: 2px solid #1f2041;
+                right: 6px;
+                top: 5px;
+                border-right: 2px solid;
+                border-bottom: 2px solid;
                 -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
-                
+            }
+        }
+    }
+    &__dropdown {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border-radius: 5%;
+        right: -25%;
+        &-item {
+            color: rgba(31, 32, 65, .5);
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            padding-top: 3px;
+            padding: 5px 20px;
+            &:hover {
+                color: $main-color;
+                transition: 0.5s;
             }
         }
     }
 }
-
 
 .button {
     &__entry {
@@ -84,6 +83,9 @@
         text-transform: uppercase;
         background: #fff;
         box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        a {
+            color: $main-color;
+        }
     }
     &__register {
         width: 196px;
@@ -95,9 +97,10 @@
         font-size: 12px;
         line-height: 15px;
         /* identical to box height */
-
         text-transform: uppercase;
-
         color: #FFFFFF;
+        a {
+            color: #fff;
+        }
     }
 }
