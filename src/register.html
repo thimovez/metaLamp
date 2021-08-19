@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,28 +8,151 @@
     <title>MetaLamp/auth</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body class="auth_page">
+
+<body>
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <div class="header__logo"><a href="#"><img src="img/mainlogo.png" alt="MetaLamp Logo"></a></div>
+                <div class="header__logo">
+                    <a href="#"><img src="img/mainlogo.png" alt="MetaLamp Logo"></a>
+                </div>
                 <div class="menu">
-                    <ul>
-                        <li class="menu__item"><a href="#">О нас</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link">Услуги</a></li>
-                        <li class="menu__item"><a href="#">Вакансии</a></li>
-                        <li class="menu__item"><a href="#">Новости</a></li>
-                        <li class="menu__item"><a href="#" class="menu__item-link">Соглашения</a></li>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">О нас</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link menu__item-sidebar">Услуги</a>
+                            <ul class="menu__dropdown">
+                                <li><a href="#" class="menu__item menu__dropdown-item">Подбор <br>отелей</a></li>
+                                <li><a href="#" class="menu__dropdown-item">Заказать <br>трансфер</a></li>
+                                <li><a href="#" class="menu__dropdown-item">Рейтинг <br>отелей</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Вакансии</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link">Новости</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__item-link menu__item-sidebar">Соглашения</a>
+                            <div class="menu__dropdown">
+                                <a href="#" class="menu__dropdown-item">Пользовательские</a>
+                                <a href="#" class="menu__dropdown-item">Международные</a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="button">
                     <button class="button__entry"><a href="register.html">войти</a></button>
-                    <button class="button__register">зарегистрироваться</button>
+                    <button class="button__register"><a href="singin.html">зарегистрироваться</a></button>
                 </div>
             </div>
         </div>
     </header>
 
-    
+    <div class="background-image"></div>
+
+    <div class="entry">
+        <div class="background">
+            <div class="input">
+                <div class="input__wrapper">
+                    <div class="entry__name">Войти</div>
+                    <input class="email" type="email" placeholder="Email">
+                    <input class="password" type="text" placeholder="Password">
+                    <button class="button__register button__register-input">Войти</button>
+                </div>
+                <div class="input__wrapper-row">
+                    <div class="entry__prompt">Нет аккаунта на Toxin?</div>
+                    <button class="button__entry"><a href="singin.html">Создать</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__menu">
+                <div class="footer__content">
+                    <div class="footer__logo">
+                        <a href="#"><img src="img/mainlogo.png" alt="MetaLamp Logo"></a>
+                    </div>
+                    <div class="footer__descr">
+                        Бронирование номеров в лучшем отеле 2021 года по версии <br>ассоциации «Отельные взгляды»
+                    </div>
+                </div>
+                <ul class="footer__nav">
+                    <div class="footer__name">навигация</div>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">О нас</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Новости</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Служба поддержки</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Услуги</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav">
+                    <div class="footer__name">о нас</div>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">О сервисе</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Наша команда</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Вакансии</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Инвесторы</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav">
+                    <div class="footer__name">Служба поддержки</div>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Соглашения</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Сообщества</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" class="footer__link">Связь с нами</a>
+                    </li>
+                </ul>
+                <ul class="footer__nav">
+                    <div class="footer__name">Подписка</div>
+                    <li class="footer__item">
+                        <p href="#" class="footer__link">Получайте специальные <br> предложения и новости сервиса</p>
+                        <div class="footer__button">
+                            <input class="footer__email" type="email" placeholder="Email">
+                            <button class="footer__arr"></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__line"></div>
+        <div class="container">
+            <div class="footer__end">
+                <div class="footer__rules">Copyright © 2021 Toxin отель. Все права защищены.</div>
+                <div class="footer__icon">
+                    <a href="https://twitter.com/?lang=ru"><img src="icons/twitter.svg" alt="twitter"></img>
+                    </a>
+                    <a href="https://www.facebook.com/"><img src="icons/facebook.svg" alt="facebook"></img>
+                    </a>
+                    <a href="https://www.instagram.com/?hl=ru"><img src="icons/inst.svg" alt="instagram"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
